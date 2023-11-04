@@ -1,0 +1,48 @@
+// Externals
+
+// Setup
+@import "setup/variables";
+@import "setup/functions";
+@import "setup/mixins";
+
+// Basics
+@import "basics/typography";
+@import "basics/base";
+@import "basics/helpers";
+@import "basics/layout";
+@import "basics/modals";
+@import "basics/animations";
+
+// Pages
+@import "./pages/item-details";
+@import "./pages/item-edit";
+@import "./pages/item-index";
+
+// Components
+@import "./cmps/app-header";
+@import "./cmps/item-list";
+@import "./cmps/item-preview";
+@import "./cmps/item-filter";
+
+
+.main-app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    > footer {
+        background-color: #111;
+        color: white;
+    }
+}
+
+
+a.active {
+    color: rgb(84, 17, 147);
+    font-weight: 600;
+}
